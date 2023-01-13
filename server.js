@@ -58,13 +58,15 @@ app.get("/:room", (req, res) => {
     });
 })
 
-//connecting the ngrok 
+
 server.listen(port, () => console.log(`Server running on port ${port}`));
-(async function(){
-    const url = await ngrok.connect({
-        proto:'http',
-        addr:port,
-        authtoken:'2K31YlIKGmdMuvjkoFnKxscuFbj_2ye29yULpfzHSogpDE1np'
-    });
-    console.log(url);
-})();
+
+// //connecting the ngrok 
+// (async function(){
+//     const url = await ngrok.connect({
+//         proto:'http',
+//         addr:port,
+//         authtoken:'2K31YlIKGmdMuvjkoFnKxscuFbj_2ye29yULpfzHSogpDE1np'
+//     });
+//     console.log(url);
+// })();

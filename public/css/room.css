@@ -11,7 +11,7 @@ body{
 main {
     height: 97vh;
     width: 50vh;
-    border-radius: 5%;
+    border-radius: 10%;
     background-color: #ff4c4b;
     text-align: center;
     display: flex;
@@ -20,8 +20,7 @@ main {
 }
 
 table{
-    
-    margin-top: 30px;
+    margin-top: 50px;
     width: 300px;
     height: 300px;
     max-width: 100% !important;
@@ -29,16 +28,28 @@ table{
     text-align: center;
 }
 
+tr {
+    width: 300px;
+    height: 100px;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
 table td{
     font-family: 'Fredoka One', cursive;
+    font-size: 50px;
 }
 
 button{
     width: 100%;
     height:100%;
+    
 }
+
 #message{
-    margin-top : 20px;
+    margin-top : 50px;
     width: 300px;
     background-color: #ffca28;
     color: #ff4c4b;
@@ -51,8 +62,10 @@ button{
 }
 #url{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
     width: 350px;
     background-color: #ffca28;
+    color: #ff4c4b;
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -64,7 +77,26 @@ button{
 }
 
 @media (max-width: 700px) {
+    button {
+        background-color: #ff4c4b;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 20px solid #ff4c4b;;
+    }
+
+    td {
+        background-color: #ffca28; 
+        color: #ff4c4b;
+    }
+
     body {
-        background: #ff4c4b;
+        background: linear-gradient(135deg, rgba(230,217,255,1) 0%, rgba(246,170,244,1) 25%);
+    }
+
+    main {
+        background: linear-gradient(135deg, rgba(230,217,255,1) 0%, rgba(246,170,244,1) 25%);
+        border-radius: 0;
+        justify-content: center;
     }
 }

@@ -29,7 +29,7 @@ socket.on("user-connected", () => {
 socket.on("can-play", () => {
     myClick = "O";
     OtherClick = "X";
-    enableClick = true;
+    enableClick = false;
 })
 //clicked function is passed when user clicks the box
 //click function if user has enable click he got 1 move once its clicked enable click becomes false
@@ -88,10 +88,10 @@ socket.on("clicked", (id) => {
         (gameStatus[6] ==2 && gameStatus[7] ==2 && gameStatus[8] ==2)) {
             document.getElementById("message").innerHTML = "You Lose";
             enableClick = false;
-            setTimeout(()=>{location.href='/';}, 2000);
+            setTimeout(()=>{location.href='/';}, 5000);
         }else if(moves==9){
             document.getElementById("message").innerHTML = "It's a Draw";
-            setTimeout(()=>{location.href='/';}, 2000);
+            setTimeout(()=>{location.href='/';}, 5000);
         }
 })
 //if room size greater than two server emits full-room .. display room is full on message

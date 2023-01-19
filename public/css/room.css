@@ -11,7 +11,7 @@ body{
 main {
     height: 97vh;
     width: 50vh;
-    border-radius: 10%;
+    border-radius: 25px;
     background-color: #ff4c4b;
     text-align: center;
     display: flex;
@@ -36,6 +36,8 @@ tr {
 td {
     width: 100px;
     height: 100px;
+    background-color: #ffca28;
+    color: #ff4c4b;
 }
 table td{
     font-family: 'Fredoka One', cursive;
@@ -45,7 +47,9 @@ table td{
 button{
     width: 100%;
     height:100%;
-    
+    background: rgba(245, 199, 243, 0.822);
+    border: none;
+    translate: 0 6px;
 }
 
 #message{
@@ -54,7 +58,7 @@ button{
     background-color: #ffca28;
     color: #ff4c4b;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     height: 60px;
     padding-top: 10px;
@@ -67,7 +71,7 @@ button{
     background-color: #ffca28;
     color: #ff4c4b;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     height: 40px;
     margin-top: 50px;
@@ -76,13 +80,14 @@ button{
     max-width: 95%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
     button {
         background-color: #ff4c4b;
         border-top: none;
         border-left: none;
         border-right: none;
-        border-bottom: 20px solid #ff4c4b;;
+        border-bottom: 20px solid #ff4c4b;
+        translate: 0 1px;
     }
 
     td {
@@ -92,6 +97,7 @@ button{
 
     body {
         background: linear-gradient(135deg, rgba(230,217,255,1) 0%, rgba(246,170,244,1) 25%);
+        margin-bottom: 20px;
     }
 
     main {
